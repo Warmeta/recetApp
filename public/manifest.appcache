@@ -12,13 +12,10 @@ CACHE:
 /assets/jquery.js
 /assets/jquery_ujs.js
 /assets/jquery.mobile.js
-/assets/recipes.js
 /assets/application.js
 
 NETWORK:
 *
-http://*
-https://*
 
 FALLBACK:
 / /500.html

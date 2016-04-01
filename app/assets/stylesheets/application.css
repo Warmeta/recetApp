@@ -17,7 +17,7 @@
 .center {
     text-align: center;
 }
-.imagen_index {
+.imagen_index, .recipe_image {
     width: 100%;
     display: block;
     margin: auto;
