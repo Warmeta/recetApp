@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e310302-a7b8-4df8-a6fd-3a2d3bd0ddc1" name="Default" comment="" />
+    <list default="true" id="3e310302-a7b8-4df8-a6fd-3a2d3bd0ddc1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/recipes/show.html.haml" afterPath="$PROJECT_DIR$/app/views/recipes/show.html.haml" />
+    </list>
     <ignored path="recetapp.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -46,10 +49,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_ingredient_fields.html.haml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_ingredient_fields.html.haml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/recipes/_ingredient_fields.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.11597938">
+            <state vertical-scroll-proportion="-1.875">
               <caret line="3" column="76" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="76" />
               <folding />
             </state>
@@ -59,8 +62,8 @@
       <file leaf-file-name="_form.html.haml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/recipes/_form.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.25">
-              <caret line="21" column="69" selection-start-line="21" selection-start-column="69" selection-end-line="21" selection-end-column="69" />
+            <state vertical-scroll-proportion="-12.5">
+              <caret line="27" column="65" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -69,8 +72,8 @@
       <file leaf-file-name="_direction_fields.html.haml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/recipes/_direction_fields.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.875">
-              <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
+            <state vertical-scroll-proportion="-1.25">
+              <caret line="2" column="73" selection-start-line="2" selection-start-column="73" selection-end-line="2" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -96,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.haml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="show.html.haml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/recipes/show.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.125">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.8505155">
+              <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -142,14 +145,14 @@
         <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/recipes/show.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/views/recipes/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/recipes/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/recipes/_ingredient_fields.html.haml" />
         <option value="$PROJECT_DIR$/app/views/recipes/_form.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/recipes/_direction_fields.html.haml" />
         <option value="$PROJECT_DIR$/app/views/recipes/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/recipes/_direction_fields.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/recipes/show.html.haml" />
       </list>
     </option>
   </component>
@@ -830,14 +833,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/recipes/show.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.125">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/recipes/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.875">
@@ -854,26 +849,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/recipes/_form.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/recipes/_ingredient_fields.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.25">
-          <caret line="21" column="69" selection-start-line="21" selection-start-column="69" selection-end-line="21" selection-end-column="69" />
+        <state vertical-scroll-proportion="-1.875">
+          <caret line="3" column="76" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/recipes/_direction_fields.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.875">
-          <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
+        <state vertical-scroll-proportion="-1.25">
+          <caret line="2" column="73" selection-start-line="2" selection-start-column="73" selection-end-line="2" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/recipes/_ingredient_fields.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/recipes/_form.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11597938">
-          <caret line="3" column="76" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="76" />
+        <state vertical-scroll-proportion="-12.5">
+          <caret line="27" column="65" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/recipes/show.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8505155">
+          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
           <folding />
         </state>
       </provider>
