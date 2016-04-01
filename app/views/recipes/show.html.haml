@@ -17,6 +17,7 @@
 				%ul
 					- @recipe.ingredients.each do |ingredient|
 						%li= ingredient.name
+						%p=  ingredient.quatity
 
 		.col-md-6
 			#directions

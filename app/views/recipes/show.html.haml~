@@ -8,6 +8,7 @@
 				%p.description= @recipe.description
 				%p
 					Submitted by
+					= @recipe.user.email
 
 	.row
 		.col-md-6
@@ -15,7 +16,7 @@
 				%h2 Ingredients
 				%ul
 					- @recipe.ingredients.each do |ingredient|
-						%li= ingredient.name
+						%li= ingredient.name =  ingredient.quatity
 
 		.col-md-6
 			#directions
