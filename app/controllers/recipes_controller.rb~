@@ -1,5 +1,6 @@
 class RecipesController < ApplicationController
   before_action :set_recipe, only: [:show, :edit, :update, :destroy]
+	before_action :authenticate_user!, except: [:index, :show]
 
   # GET /recipes
   # GET /recipes.json
@@ -35,6 +36,7 @@ class RecipesController < ApplicationController
         format.json { render json: @recipe.errors, status: :unprocessable_entity }
       end
     end
+		appCache.UPDATEREADY()
   end
 
   # PATCH/PUT /recipes/1
@@ -49,6 +51,7 @@ class RecipesController < ApplicationController
         format.json { render json: @recipe.errors, status: :unprocessable_entity }
       end
     end
+		appCache.UPDATEREADY()
   end
 
   # DELETE /recipes/1
@@ -59,6 +62,7 @@ class RecipesController < ApplicationController
       format.html { redirect_to recipes_url, notice: 'Recipe was successfully destroyed.' }
       format.json { head :no_content }
     end
+		appCache.UPDATEREADY()
   end
 
   private
@@ -69,6 +73,6 @@ class RecipesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def recipe_params
-      params.require(:recipe).permit(:title, :description, :user_id, :image, ingredients_attributes: [:id, :name, :quantity, :destroy], directions_attributes: [:id, :step, :destroy])
+      params.require(:recipe).permit(:title, :description, :user_id, :image, ingredients_attributes: [:id, :name, :quatity, :destroy], directions_attributes: [:id, :step, :destroy])
     end
 end

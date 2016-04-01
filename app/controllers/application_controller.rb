@@ -9,8 +9,8 @@ class ApplicationController < ActionController::Base
 	 require 'tempfile'
    require 'fileutils'
 
-    path = 'public/offline.appcache'
-    temp_file = Tempfile.new('offline.appcache')
+    path = 'public/manifest.appcache'
+    temp_file = Tempfile.new('manifest.appcache')
     begin
       temp_file.write("CACHE MANIFEST\n")
       temp_file.write("# v #{Time.now.to_i}\n")

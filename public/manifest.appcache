@@ -1,0 +1,24 @@
+CACHE MANIFEST
+# Version 1459531437
+
+CACHE:
+/assets/jquery.mobile.css
+/assets/Sm.css
+/assets/Sm.min.css
+/assets/recipes.scss
+/assets/scaffolds.scss
+/assets/application.css
+
+/assets/jquery.js
+/assets/jquery_ujs.js
+/assets/jquery.mobile.js
+/assets/recipes.js
+/assets/application.js
+
+NETWORK:
+*
+http://*
+https://*
+
+FALLBACK:
+/ /500.html
