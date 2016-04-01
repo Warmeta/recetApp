@@ -27,6 +27,7 @@
 
 	.row
 		.col-md-12
-			= link_to "Back", root_path, class: "btn btn-default"
-			= link_to "Edit", edit_recipe_path, class: "btn btn-default"
-			= link_to "Delete", recipe_path, method: :delete, data: {confirm: "Are you sure?" }, class: "btn btn-default"
+
+			= link_to "Atrás", root_path, class: "btn btn-default", "data-role" => "button", "data-theme" => "a", "data-icon" => "back", "data-rel" => "back"
+			= link_to "Editar", edit_recipe_path, class: "btn btn-default", "data-role" => "button", "data-theme" => "a", "data-transition" => "slide", "data-icon" => "edit"
+			= link_to "Eliminar", recipe_path, method: :delete, data: {confirm: "¿Estás seguro?" }, "data-role" => "button", "data-theme" => "b", "data-rel" => "dialog", "data-icon" => "delete", class: "btn btn-default"

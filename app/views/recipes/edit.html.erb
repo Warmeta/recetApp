@@ -2,5 +2,5 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @recipe %> |
-<%= link_to 'Back', recipes_path %>
+<%= link_to 'Ir a la receta', @recipe, "data-transition" => "slide" %> |
+<%= link_to 'Atrás', recipes_path, "data-role" => "button", "data-theme" => "b", "data-icon" => "back", "data-rel" => "back" %>

@@ -1,4 +1,4 @@
-</html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" manifest="/manifest.appcache">
 <head>
   <title>RecetApp</title>
@@ -11,28 +11,14 @@
 </head>
 <body>
 	<div data-role="page" data-theme="a">
-		<div data-role="header" data-position="fixed">
-			<h1>RecetApp</h1>
-			<a data-rel="back" class="ui-btn ui-btn-left ui-corner-all ui-btn-icon-left ui-icon-back ui-btn-icon-notext ui-nodisc-icon">Atrás</a>
-			<a href="/" class="ui-btn ui-btn-right ui-corner-all ui-btn-icon-right ui-icon-home ui-btn-icon-notext ui-nodisc-icon" data-ajax="false">Inicio</a>
-		</div>
+    <%= render "layouts/header" %>
 		<div class="ui-content" role="main">
 			
 			<ul data-role="listview" data-inset="true">
 				<%= yield %>
 			</ul>
 		</div>
-		<div data-role="footer" data-position="fixed" data-theme="a">
-			<div data-role="navbar">
-				<% if user_signed_in? %>
-					<%= link_to 'New Recipe', new_recipe_path, class: "ui-btn-right" %>
-          <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete, class: "ui-btn" %>
-        <%else%>
-          <%= link_to 'Iniciar sesión',  new_user_session_path, class: "ui-btn-right" %>
-          <%= link_to 'Registrarse',  new_user_registration_path, class: "ui-btn" %>
-        <%end%>
-			</div>
-		</div>
+    <%= render "layouts/footer" %>
 	</div>
 </body>
 </html>

@@ -14,12 +14,12 @@
 
 		.row
 			.col-md-6
-				%h3 Ingredients
+				%h3 Ingredientes
 				#ingredients
 					= f.simple_fields_for :ingredients do |ingredient|
 						= render 'ingredient_fields', f: ingredient
 					.links
-						= link_to_add_association 'Add Ingredient', f, :ingredients, class: "btn btn-default add-button"
+						= link_to_add_association 'Añadir ingrediente', f, :ingredients, class: "btn btn-default add-button"
 
 			.col-md-6
 				%h3 Directions
@@ -27,6 +27,6 @@
 					= f.simple_fields_for :directions do |direction|
 						= render 'direction_fields', f: direction
 					.links
-						= link_to_add_association 'Add Step', f, :directions, class: "btn btn-default add-button"
+						= link_to_add_association 'Añadir Paso', f, :directions, class: "btn btn-default add-button"
 
 	= f.button :submit, class: "btn btn-primary"
