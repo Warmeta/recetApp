@@ -1,0 +1,29 @@
+<%= form_for @recipe , html: {multipart: true, "data-ajax"=> "false"} do |f| %>
+  <% if @theme.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@theme.errors.count, "error") %> No se permite guardar este tema:</h2>
+
+      <ul>
+      <% @theme.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title, "Título" %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :content, "Descripción" %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :image, "Imagen" %><br>
+    <%= f.file_field :image %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Guardar", "data-icon" => "plus" %>
+  </div>
+<% end %>
